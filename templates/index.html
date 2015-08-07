@@ -39,16 +39,18 @@
 					<a href="index.html"><img src="{{ url_for('static', filename='img/logo.png') }}" class="img-responsive" alt=""></a>
 				</div> -->
 				<div class="head-nav">
+					<nav id="nav">
 					<span class="menu"> </span>
-					<ul class="cl-effect-3">
-						<li class="active"><a href="index.html">主页</a></li>
-						<li><a href=" about.html">关于我们</a></li>
-						<li><a href=" employeers.html">Employeers </a></li>
-						<li><a href=" 404.html">产品</a></li>
-						<li><a href=" blog.html">新闻</a></li>
-						<li><a href=" contact.html">留言</a></li>
-						<div class="clearfix"> </div>
-					</ul>
+						<ul class="cl-effect-3 nav navbar-nav">
+							<li class="active"><a href="index.html">主页</a></li>
+							<li><a href=" about.html">关于我们</a></li>
+							<li><a href=" employeers.html">Employeers </a></li>
+							<li><a href=" 404.html">产品</a></li>
+							<li><a href=" blog.html">新闻</a></li>
+							<li><a href=" contact.html">留言</a></li>
+							<div class="clearfix"> </div>
+						</ul>
+					</nav>
 					<!-- script-for-nav -->
 					<script>
 						$( "span.menu" ).click(function() {
@@ -61,7 +63,7 @@
 						        activeClass: "active", // Class to be added to highlight nav elements
 								sectionSelector: "scrollto", // Class of the section that is interconnected with nav links
 								animDuration: 350, // Duration of jQuery animation as well as jQuery scrolling duration
-								startAt: -200, // Stick the menu at XXXpx from the top of the this() (nav container)
+								startAt: 0, // Stick the menu at XXXpx from the top of the this() (nav container)
 								easing: "swing", // Easing type if jqueryEffects = true, use jQuery Easing plugin to extend easing types - gsgd.co.uk/sandbox/jquery/easing
 								animateCSS: true, // AnimateCSS effect on/off
 								animateCSSRepeat: false, // Repeat animation everytime user scrolls
@@ -85,7 +87,7 @@
 	</div>
 <!-- header -->
 <!-- banner -->
-	<div class="banner">
+	<div class="banner scrollto">
 		<div class="container">
 			<!-- banner Slider starts Here -->
 			<script src="{{ url_for('static', filename='js/responsiveslides.min.js') }}"></script>
@@ -377,7 +379,7 @@
 							  <script defer src="{{ url_for('static', filename='js/jquery.flexslider.js') }}"></script>
 							  <script type="text/javascript">
 								$(function(){
-								  SyntaxHighlighter.all();
+								  // SyntaxHighlighter.all();
 								});
 								$(window).load(function(){
 								  $('.flexslider').flexslider({

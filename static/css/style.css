@@ -3,15 +3,6 @@ Author URL: http://w3layouts.com
 License: Creative Commons Attribution 3.0 Unported
 License URL: http://creativecommons.org/licenses/by/3.0/
 --*/
-.active {
-  color: #fff !important;
-  text-decoration: underline !important;
-  -webkit-transform: translate3d(0, 0, 0);
-  -moz-transform: translate3d(0, 0, 0);
-  -o-transform: translate3d(0, 0, 0);
-  -ms-transform: translate3d(0, 0, 0);
-  transform: translate3d(0, 0, 0); // hardware acceleration of CSS animation
-}
 h4, h5, h6,
 h1, h2, h3 {margin-top: 0;}
 ul, ol {margin: 0;}
@@ -1215,7 +1206,6 @@ ul#filters {
 }
 .b-link-stripe:hover .b-line{
 	opacity:1;
-}
 }
 #filters {
 	margin: 3% 0;
@@ -2501,6 +2491,7 @@ ul.number li a, ul.number li span {
 }
 .header-bottom {
   padding: 1em 0 0.6em;
+  background: white;
 }
 .banner-info h1 {
   font-size: 1.7em;
