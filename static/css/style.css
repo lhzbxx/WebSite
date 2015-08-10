@@ -266,7 +266,7 @@ i.rss:hover{
   -o-background-size: cover;
   -ms-background-size: cover;
   min-height: 650px;
-  padding: 1em 0;
+  padding: 0 0;
 }
 .book1 input[type="text"] {
   width: 100% !important;

@@ -1,136 +1,147 @@
-
-<!--
-Author: W3layouts
-Author URL: http://w3layouts.com
-License: Creative Commons Attribution 3.0 Unported
-License URL: http://creativecommons.org/licenses/by/3.0/
--->
 <!DOCTYPE HTML>
 <html>
 <head>
-<title>Muster a Corporate Category Flat Bootstarp Responsive Website Template | 404 :: w3layouts</title>
-<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
-<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<title>域容-网站制作</title>
+<link href="{{ url_for('static', filename='css/bootstrap.css') }}" rel="stylesheet" type="text/css" media="all">
+<link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet" type="text/css" media="all" />
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="keywords" content="Muster Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template, 
-Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
+<meta name="keywords" content="" />
 <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
-<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
-<script src="js/jquery.min.js"></script>
-<link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" />		
+<link href='http://fonts.useso.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
+<script src="{{ url_for('static', filename='js/jquery.min.js') }}"></script>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/flexslider.css') }}" type="text/css" media="screen" />
+<link href="{{ url_for('static', filename='css/animate.min.css') }}" rel="stylesheet" type="text/css">
+<link href="{{ url_for('static', filename='css/font-awesome.min.css') }}" rel="stylesheet" type="text/css">
+<link href="{{ url_for('static', filename='css/set2.css') }}" rel="stylesheet" type="text/css">
+<link href="{{ url_for('static', filename='css/skippr.css') }}" rel="stylesheet" type="text/css">
+<script src="{{ url_for('static', filename='js/jquery.easing.min.js') }}"></script>
+<script src="{{ url_for('static', filename='js/jquery.stickyNavbar.min.js') }}"></script>
+<script src="{{ url_for('static', filename='js/skippr.min.js') }}"></script>
+<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=PQXAqcfhnu1VPxWCRsF6rXKA"></script>
+<style>
+	.up{width:54px;height:54px;background:url(static/img/topback.gif) no-repeat 0 0;filter:alpha(Opacity=60);-moz-opacity:0.6;opacity: 0.6;}
+	.up:hover{filter:alpha(Opacity=100);-moz-opacity:1;opacity:1;}
+</style>
+<script type="text/javascript" src="{{ url_for('static', filename='js/scrolltopcontrol.js') }}"></script>
 </head>
 <body>
+
 <!-- header -->
-	<div class="header">
-			<div class="header-top">
-				<div class="container">
-					<div class="head-left">
-						<ul class="number">
-							<li><span><i class="phone"> </i>+0123 456 789</span></li>
-							<li><a href="mailto:info@example.com"><i class="mail"> </i>hello@address.com</a></li>	
-								<div class="clearfix"> </div>						
-						</ul>
-					</div>
-					<div class="head-right">
-						<ul>
-							<li><a href="#"><i class="fb"> </i></a></li>
-							<li><a href="#"><i class="twt"> </i></a></li>	
-							<li><a href="#"><i class="ttt"> </i></a></li>	
-							<li><a href="#"><i class="ve"> </i></a></li>	
-							<li><a href="#"><i class="in"> </i></a></li>	
-							<li><a href="#"><i class="dib"> </i></a></li>	
-							<li><a href="#"><i class="fli"> </i></a></li>	
-							<li><a href="#"><i class="rss"> </i></a></li>	
-							<div class="clearfix"> </div>						
-						</ul>
-					</div>
-						<div class="clearfix"> </div>	
+	<div class="header scrollto" id="header">
+		<div class="header-top">
+			<div class="container">
+				<div class="head-left">
+					<a href=""><img src="{{ url_for('static', filename='img/logo.png') }}" alt="logo"></a>
 				</div>
+				<div class="head-right">
+					<ul class="number">
+						<li><span><i class="phone"> </i> 0370-2918900</span></li>
+						<li><a href="mailto:lhzbxx@sjtu.edu.cn"><i class="mail"> </i> lhzbxx@sjtu.edu.cn</a></li>	
+						<div class="clearfix"> </div>						
+					</ul>
+				</div>
+				<div class="clearfix"> </div>	
 			</div>
+		</div>
+		<div id="sticky-wrapper">
 			<div class="header-bottom">
 				<div class="container">
-					<div class="logo">
-						<a href="index.html"><img src="images/logo.png" class="img-responsive" alt=""></a>
-					</div>
 					<div class="head-nav">
+						<nav id="nav">
 						<span class="menu"> </span>
-							<ul class="cl-effect-3">
-								<li><a href="index.html">Home</a></li>
-								<li><a href=" about.html">About us</a></li>
-								<li><a href=" employeers.html">Employeers </a></li>
-								<li class="active"><a href=" 404.html">Job Seekers </a></li>
-								<li><a href=" blog.html">Blog</a></li>
-								<li><a href=" contact.html">Contact</a></li>
-									<div class="clearfix"> </div>
-									
+							<ul class="cl-effect-3 nav navbar-nav">
+								<li class="active"><a href="#banner">主页</a></li>
+								<li><a href="#our">关于我们</a></li>
+								<li><a href="">备用</a></li>
+								<li><a href="#employs">产品</a></li>
+								<li><a href="#what">新闻</a></li>
+								<li><a href="#contact">留言</a></li>
+								<div class="clearfix"> </div>
 							</ul>
-								<!-- script-for-nav -->
-							<script>
-								$( "span.menu" ).click(function() {
-								  $( ".head-nav ul" ).slideToggle(300, function() {
-									// Animation complete.
-								  });
+						</nav>
+						<!-- script-for-nav -->
+						<script>
+							$( "span.menu" ).click(function() {
+							  $( ".head-nav ul" ).slideToggle(300, function() {
+								// Animation complete.
+							  });
+							});
+							$(function () {
+								$('#sticky-wrapper').stickyNavbar({
+							        activeClass: "active", // Class to be added to highlight nav elements
+									sectionSelector: "scrollto", // Class of the section that is interconnected with nav links
+									animDuration: 350, // Duration of jQuery animation as well as jQuery scrolling duration
+									startAt: 81, // Stick the menu at XXXpx from the top of the this() (nav container)
+									easing: "swing", // Easing type if jqueryEffects = true, use jQuery Easing plugin to extend easing types - gsgd.co.uk/sandbox/jquery/easing
+									animateCSS: true, // AnimateCSS effect on/off
+									animateCSSRepeat: false, // Repeat animation everytime user scrolls
+									cssAnimation: "fadeInDown", // AnimateCSS class that will be added to selector
+									jqueryEffects: false, // jQuery animation on/off
+									jqueryAnim: "slideDown", // jQuery animation type: fadeIn, show or slideDown
+									selector: "li", // Selector to which activeClass will be added, either "a" or "li"
+									mobile: false, // If false, nav will not stick under viewport width of 480px (default) or user defined mobileWidth
+									mobileWidth: 480, // The viewport width (without scrollbar) under which stickyNavbar will not be applied (due user usability on mobile)
+									zindex: 9999, // The zindex value to apply to the element: default 9999, other option is "auto"
+									stickyModeClass: "sticky", // Class that will be applied to 'this' in sticky mode
+									unstickyModeClass: "unsticky" // Class that will be applied to 'this' in non-sticky mode
 								});
-							</script>
+							});
+						</script>
 						<!-- script-for-nav --> 
-					</div>
-					<div class="header-right1">
-						<li><a href="login.html">Login</a></li>
-						<li><a href="register.html">Sign In</a></li>
 					</div>
 					<div class="clearfix"> </div>
 				</div>
 			</div>
+		</div>
 	</div>
 <!-- header -->
 <!-- 404 -->
 	<div class="main">
 		<div class="error-404 text-center">
-				<h1>404</h1>
-				<p>this link dead link</p>
-				<a class="b-home" href="index.html">Back to Home</a>
-			</div>
+			<h1>404</h1>
+			<p>this link dead link</p>
+			<a class="b-home" href="index.html">Back to Home</a>
+		</div>
 	</div>
-	<!-- 404 -->
+<!-- 404 -->
 
 <!-- footer-top -->
 <div class="footer-top">
 	<div class="container">
 		<div class="col-md-4 foo-left">
-			<a href="index.html"><img src="images/logo.png" class="img-responsive" alt=""></a>
-			<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore. sed diam nonumy eirmod tempor invidunt ut labore. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore.</p>
+			<a href="index.html"><img src="{{ url_for('static', filename='img/logo.png') }}" class="img-responsive" alt="logo"></a>
+			<p>这里还是放公司的介绍吧。</p>
+			<p>也可以考虑二维码什么的。</p>
 		</div>
 		<div class="col-md-4 foo-left">
-			<h3>Twitter Update</h3>
-			<h6>ABOUT 9 HOURS</h6>
-			<p>AGOMeet Aldous - a Brave New World for #rails with more cohesion, less coupling and greater dev speed http://t.co/rsekglotzs</p>
-			<h6>ABOUT 1 DAY AGO</h6>
-			<p>Here's a rare Interview with #graphicdesign legend Massimo Vignelli http://t.co/duxnpoh57z http://t.co/kxO3gPBTo7</p>
+			<h3>其它的重要信息</h3>
+			<h6>不拉不拉1</h6>
+			<p>XXXXXXXXXXXXXX</p>
+			<h6>巴拉巴拉2</h6>
+			<p>XXXXXXXXXXXXXX</p>
 		</div>
 		<div class="col-md-4 foo-left">
-			<h3>Useful lnks</h3>
-				<ul>
-					<li class="active"><a href="about.html">About Us</a></li>
-					<li><a href="#">Services </a></li>
-					<li><a href="#">Work </a></li>
-					<li><a href="blog.html">Our Blog</a></li>
-					<li><a href=" 404.html">Customers Testimonials</a></li>
-					<li><a href="#">Affliate</a></li>
-					<li><a href=" contact.html">Contact Us</a></li>
-						<div class="clearfix"> </div>		
-				</ul>
+			<h3>链接</h3>
+			<ul>
+				<li class="active"><a href="#banner">主页</a></li>
+				<li><a href="#our">关于我们</a></li>
+				<li><a href="#employs">产品</a></li>
+				<li><a href="#what">新闻</a></li>
+				<li><a href="#contact">留言</a></li>
+				<div class="clearfix"> </div>		
+			</ul>
 		</div>
 		<div class="clearfix"> </div>
 	</div>
 </div>
 <!-- footer-top -->
 <!-- footer-bottom -->
-	<div class="footer-bottom">
-		<div class="container">
-			<p>Copyrights © 2015 Muster All rights reserved | Template by <a href="http://w3layouts.com/">&nbsp; W3layouts</a></p>
-		</div>
+<div class="footer-bottom">
+	<div class="container">
+		<p>Copyrights © 2015 YuRong All rights reserved | Template by <a href="http://w3layouts.com/">&nbsp; lhzbxx</a></p>
 	</div>
+</div>
 <!-- footer-bottom -->
 </body>
 </html>
